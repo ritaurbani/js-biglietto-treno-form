@@ -1,6 +1,7 @@
 //prelevo form, Input
 
 const formElement = document.getElementById("user-form");
+const formElement = document.getElementById("user-form");
 const ageInputElement = document.getElementById("age");
 const kmInputElement = document.getElementById("km");
 
@@ -10,7 +11,7 @@ formElement.addEventListener("submit", function (event) {
     console.log(event);
     event.preventDefault();
 
-    const age = parseInt(ageInputElement.value.trim());
+    const age = parseInt(ageInputElement.value.trim()); //valori dell input
     const km = parseInt(kmInputElement.value.trim());
 
     const ticketPrice = km * 0.21              // Definire prezzo biglietto: in base ai km(0.21 al km)
